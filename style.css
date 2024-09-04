@@ -143,7 +143,6 @@ header {
 .icona-x{
     height: 45px;
     width: 45px;
-    color:#000000;
 }
 
 
@@ -166,6 +165,9 @@ header {
     color: #2D7DD2;
 }
 .giallo{
+    color: #EEB902;
+}
+.giallo-responsive{
     color: #EEB902;
 }
 .blu{
@@ -502,7 +504,7 @@ a{
     }
 }
 
-@media (max-width: 780px){
+@media only screen and (max-width: 767px) {
     .header{
         margin-left: 3%;
     }
@@ -540,9 +542,6 @@ a{
     #check:checked ~ .menu{
         right: 0;
     }
-}
-
-@media only screen and (max-width: 767px) {
     h1 {
         font-size: 48px;
     }
@@ -563,6 +562,10 @@ a{
     }
     .salvo, .myportfolio{
         font-size: 58px;
+    }
+    .giallo-responsive{
+        color: #000000;
+        text-decoration: underline #ffffff;
     }
     .misure_arrow{
         height: 120px;
