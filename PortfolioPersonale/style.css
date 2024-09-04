@@ -1,0 +1,663 @@
+html {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+  }
+
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+h1{
+    font-family: "Avant Garde", "Century Gothic", sans-serif;
+    font-style: initial;
+    font-size: 64px;
+}
+
+h2{
+    font-family: "Avant Garde", "Century Gothic", sans-serif;
+    font-style: initial;
+    font-size: 55px;
+}
+
+h3{ 
+    font-family: "Avant Garde", "Century Gothic", sans-serif;
+    font-style: initial;
+    font-size: 36px;
+}
+
+h4{
+    font-family: "Avant Garde", "Century Gothic", sans-serif;
+    font-style: initial;
+    font-size: 32px;
+}
+
+h5{ 
+    font-family: "Avant Garde", "Century Gothic", sans-serif;
+    font-style: initial;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+p, .elenco{
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.logo{
+    font-family: "Avant Garde", "Century Gothic", sans-serif;
+    font-style: initial;
+    font-size: 32px;
+}
+
+.color_logo{
+    color:#ffffff;
+}
+.color_logo:hover{
+    color:#EEB902;
+}
+
+.voci{
+    font-family: "Avant Garde", "Century Gothic", sans-serif;
+    font-style: initial;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+header {
+    width: 100%;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    z-index: 2;
+} 
+
+.nav-bar{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: #000000;
+    padding: 12px 10px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding-left: 30px;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+.menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #EEB902;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after{
+    width: 100%;
+}
+.open-menu, .close-menu{
+    position: absolute;
+    color:#ffffff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%)
+}
+.close-menu{
+    top: 8px;
+    right: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+#check{
+    display: none;
+}
+
+.icona-menu{
+    height: 45px;
+    width: 45px;
+}
+.icona-x{
+    height: 45px;
+    width: 45px;
+    color:#000000;
+}
+
+
+.left{
+    margin-left:3%;
+}
+
+
+.presentation {
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+.myportfolio{
+    font-size: 80px;
+    color: #EEB902;
+}
+.salvo{
+    font-size: 80px;
+    color: #2D7DD2;
+}
+.giallo{
+    color: #EEB902;
+}
+.blu{
+    color: #2D7DD2;
+}
+.rosso{
+    color: #F45D01;
+}
+.verde{
+    color: #97CC04;
+}
+.bianco{
+    color:#ffffff;
+}
+
+
+.text-align{
+    text-align: center;
+}
+
+.iconarrow{
+    position: absolute;
+    right: 3%;
+    z-index: 1;
+}
+.misure_arrow{
+    height: 150px;
+    width: 150px;
+}
+
+hr{ 
+    margin-top: 250px;
+    width: 98%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.opere{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.suitcase{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.misure_suitcase{
+    width: 90px;
+    height: 90px;
+}
+
+.intestazione{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    column-gap: 0;
+}
+
+
+.contenitore_iconahome{
+    height: 90px;
+    width: 90px;
+}
+.contenitore_testohome{
+    height: 140px;
+    width: 240px;
+}
+.misure_iconehome{
+    height: 140px;
+    width: 140px;
+}
+
+.anteprima_foto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.foto_presentazione{
+    width: 587px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hr-post{ 
+    margin-top: 100px;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.hr-sezione{ 
+    margin-top: 20px;
+    margin-bottom: -10px;
+    width: 70%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.hr-opere{
+    margin-top: 80px;
+    width: 90%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+footer {
+    font-family: "Avant Garde", "Century Gothic", sans-serif;
+    font-style: initial;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 400px;
+}
+
+.sezione{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 25px;
+}
+
+.biografia{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.icona-titolo{
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+}
+
+.misure_iconeabout{
+    width: 70px;
+    height: 70px;
+}
+
+.margin0{
+    margin: 0px;
+}
+.padding-top{
+    padding-top: 1%;
+}
+.padding-left{
+    padding-left: 1%;
+}
+
+.contatti{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.icona-testo{
+    height: 325px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.righe-social{
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.icona-social{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.centro{
+    width: 100%;
+}
+.icona-centro{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.icona_contact_me{
+    height: 150px;
+    width: 150px;
+}
+.icon-instagram{
+    width: 40px;
+    height: 40px;
+}
+.icon-behance{
+    width: 40px;
+    height: 30px;
+}
+.icon-mail{
+    width: 40px;
+    height: 35px;
+}
+.icon-linkedin{
+    width: 40px;
+    height: 40px;
+}
+.link_social{
+    color: #ffffff;
+}
+.link_social:hover{
+    color: #2D7DD2;
+}
+
+.foto-descrizione{
+    margin-top: 60px;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icona-opera{
+    width: 40px;
+    height: 40px;
+}
+
+.foto{
+    width: 490px;
+    height: 274px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.descrizione{
+    width: 100%;
+}
+
+.gallery{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+    row-gap: 50px;
+}
+.foto-simpson{
+    width: 550px;
+    height: 275px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.foto-tvgen{
+    width: 348px;
+    height: 336px;
+    border-radius: 5px;
+    object-fit: fill;
+}
+.foto-uglyads{
+    width: 331px;
+    height: 467px;
+    border-radius: 5px;
+    object-fit: fill;
+}
+.foto-manifesto{
+    width: 298px;
+    height: 238px;
+    border-radius: 5px;
+    object-fit: fill;
+}
+.foto-cover{
+    width: 238px;
+    height: 238px;
+    border-radius: 5px;
+    object-fit: fill;
+}
+.misure_iconeback{
+    width: 67px;
+    height: 67px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ancoraggio{}
+.ancoraggio2{}
+.ancoraggio3{}
+
+.link_opera{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #ffffff;
+}
+
+.link_opera:hover{
+    color: #EEB902;
+}
+
+.anteprima_foto:hover{
+    transform: scale(1.1);
+}
+
+@media (min-width: 600px) and (max-width: 1023px){
+    .foto{
+        width: 440px;
+        height: 246px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .foto-descrizione{
+        margin-top: 25px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 780px){
+    .header{
+        margin-left: 3%;
+    }
+    .nav-bar{
+        margin-left: 2%;
+        margin-right: 4%;
+        width: 92%;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #EEB902;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        color: #000000;
+        padding: 10px;
+    }
+    .menu li a::after{
+        background-color: #ffffff;
+    }
+    .open-menu, .close-menu{
+        display: block;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4, .logo {
+        font-size: 24px;
+    }
+    h5, .voci {
+        font-size: 32px;
+    }
+    p, .elenco{
+        font-size: 20px;
+    }
+    .salvo, .myportfolio{
+        font-size: 58px;
+    }
+    .misure_arrow{
+        height: 120px;
+        width: 120px;
+    }
+    .opere{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .intestazione{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 120px;
+    }
+    .figure_margin{
+        margin: 5px;
+    }
+    .misure_iconehome{
+        height: 90px;
+        width: 90px;
+    }
+    .foto_presentazione{
+        width: 350px;
+        height: 196px;
+    }
+    .misure_suitcase{
+        width: 65px;
+        height: 65px;
+    }
+    .padding-left{
+        padding-left: 4%;
+    }
+    .contatti{
+        flex-wrap: wrap;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .icona-testo{
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .icona-social{
+        height: 65px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .icona_contact_me{
+        height: 120px;
+        width: 120px;
+    }
+    .misure_iconeback{
+        width: 50px;
+        height: 50px;
+    }
+    .sezione{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .icona-opera{
+        width: 30px;
+        height: 30px;
+    }
+    .foto-descrizione{
+        margin-top: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .foto{
+        width: 350px;
+        height: 196px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .foto-simpson{
+        width: 400px;
+        height: 246px;
+    }
+    .foto-tvgen{
+        width: 308px;
+        height: 296px;
+    }
+    .foto-uglyads{
+        width: 247px;
+        height: 340px;
+    }
+    .foto-manifesto{
+        width: 239px;
+        height: 166px;
+    }
+    .foto-cover{
+        width: 228px;
+        height: 228px;
+    }
+}
