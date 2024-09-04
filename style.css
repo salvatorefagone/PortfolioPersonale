@@ -565,7 +565,7 @@ a{
     }
     .giallo-responsive{
         color: #000000;
-        text-decoration: underline white;
+        font-weight: 700;
     }
     .misure_arrow{
         height: 120px;
