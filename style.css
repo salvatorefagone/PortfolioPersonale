@@ -601,6 +601,9 @@ a{
     .padding-left{
         padding-left: 4%;
     }
+    .margin-icon{
+        margin-right: 5%;
+    }
     .contatti{
         flex-wrap: wrap;
         margin-left: 0;
